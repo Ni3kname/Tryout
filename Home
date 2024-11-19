@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Your Career</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #1d1f27;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .rocket {
+            position: relative;
+            top: 300px;
+            transition: top 3s ease-in-out;
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>We Mean Business!</h1>
+        <p>Lanceer jouw carrière bij Business Services. Klik op de knop om je reis te beginnen!</p>
+        <img id="rocket" class="rocket" src="https://i.imgur.com/yJzJ1OC.png" alt="Rocket" width="150">
+        <br>
+        <button class="button" onclick="launchRocket()">Launch the Rocket</button>
+    </div>
+
+    <script>
+        function launchRocket() {
+            const rocket = document.getElementById("rocket");
+            rocket.style.top = "-500px"; // Laat de raket omhoog vliegen
+            setTimeout(() => {
+                alert("Je bent klaar om je carrière te lanceren! Kom naar de tweede verdieping en ontdek meer!");
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
